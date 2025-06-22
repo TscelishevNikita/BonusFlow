@@ -3,6 +3,6 @@ from typing import List, Dict
 
 
 def load_rules() -> List[Dict]:
-    with open("BonusFlow/config/bonus_rules.json", "r") as rules_file:
+    with open("config/bonus_rules.json", "r") as rules_file:
         rules = json.load(rules_file)
         return list(rules.values())
