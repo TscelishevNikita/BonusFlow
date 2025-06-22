@@ -1,0 +1,25 @@
+{
+  "base_rule": {
+    "name": "base_rate",
+    "description": "Базовый бонус - 1 бонус за каждые $10",
+    "type": "base_bonus",
+    "amount": 10,
+    "priority": 1
+  },
+  "weekend_boost": {
+    "name": "holiday_bonus",
+    "description": "Бонус в выходные дни - x2",
+    "type": "multiplier",
+    "amount": 2.0,
+    "priority": 2,
+    "condition": "is_weekend_or_holiday"
+  },
+  "vip_boost": {
+    "name": "vip_boost",
+    "description": "Бонус для VIP-клиентов - 40%",
+    "type": "multiplier",
+    "amount": 1.4,
+    "priority": 3,
+    "condition": "is_vip"
+  }
+}
