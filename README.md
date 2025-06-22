@@ -32,7 +32,7 @@ python main.py
 
 Открыть документацию http://127.0.0.1:8000/docs или использовать PostMan
 
-Пример запроса:
+Пример POST запроса:
 ```bash
 {
   "transaction_amount": 150,
