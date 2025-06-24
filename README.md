@@ -2,12 +2,12 @@
 
 ## Установка
 ```bash
-pip install -r requirements.txt
+docker build -t bonus_flow:latest . 
 ```
 
 ## Запуск
 ```bash
-python main.py
+docker run -p 8000:80 bonus_flow:latest
 ```
 
 ## Настройка
